@@ -1,0 +1,11 @@
+F:\AutoService\AutoService\AutoService\bin\Debug\netcoreapp2.0\AutoService.deps.json
+F:\AutoService\AutoService\AutoService\bin\Debug\netcoreapp2.0\AutoService.runtimeconfig.json
+F:\AutoService\AutoService\AutoService\bin\Debug\netcoreapp2.0\AutoService.runtimeconfig.dev.json
+F:\AutoService\AutoService\AutoService\bin\Debug\netcoreapp2.0\AutoService.dll
+F:\AutoService\AutoService\AutoService\obj\Debug\netcoreapp2.0\AutoService.csprojResolveAssemblyReference.cache
+F:\AutoService\AutoService\AutoService\obj\Debug\netcoreapp2.0\AutoService.csproj.CoreCompileInputs.cache
+F:\AutoService\AutoService\AutoService\obj\Debug\netcoreapp2.0\AutoService.AssemblyInfoInputs.cache
+F:\AutoService\AutoService\AutoService\obj\Debug\netcoreapp2.0\AutoService.AssemblyInfo.cs
+F:\AutoService\AutoService\AutoService\bin\Debug\netcoreapp2.0\AutoService.pdb
+F:\AutoService\AutoService\AutoService\obj\Debug\netcoreapp2.0\AutoService.dll
+F:\AutoService\AutoService\AutoService\obj\Debug\netcoreapp2.0\AutoService.pdb
