@@ -1,20 +1,22 @@
 ﻿@using Microsoft.AspNet.Identity
 @if (User.IsInRole("client"))
 {
-    <li>@Html.ActionLink("My Orders", "My", "Order")</li>
-}
-else if (User.IsInRole("service"))
-{
     <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("My Services", "My", "Service")</li>
+        <li>@Html.ActionLink("My Orders", "My", "Order")</li>
     </ul>
+}
+else if (User.IsInRole("autoservice"))
+{
+<ul class="nav navbar-nav navbar-right">
+    <li>@Html.ActionLink("My Services", "My", "Service")</li>
+</ul>
 }
 else if (User.IsInRole("admin"))
 {
-    <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Manage Services", "Manage", "Service")</li>
-        <li>@Html.ActionLink("Manage Orders", "Manage", "Order")</li>
-        <li>@Html.ActionLink("Role", "Index", "Role")</li>
-    </ul>
+<ul class="nav navbar-nav navbar-right">
+    <li>@Html.ActionLink("Manage Services", "Manage", "Service")</li>
+    <li>@Html.ActionLink("Manage Orders", "Manage", "Order")</li>
+    <li>@Html.ActionLink("Role", "Index", "Role")</li>
+</ul>
 }
 
