@@ -230,11 +230,11 @@ C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\System.Web.Helpers.xml
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\System.Web.Mvc.xml
-C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\System.Web.Optimization.xml
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\System.Web.Razor.xml
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\System.Web.WebPages.xml
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\System.Web.WebPages.Razor.xml
+C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\System.Web.Optimization.xml
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\Antlr3.Runtime.pdb
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\Newtonsoft.Json.xml
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\EntityFramework.xml
@@ -258,11 +258,11 @@ C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\Microsoft.AI.Web.xml
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\ru\System.Web.Helpers.resources.dll
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\ru\System.Web.Mvc.resources.dll
-C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\ru\System.Web.Optimization.resources.dll
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\ru\System.Web.Razor.resources.dll
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\ru\System.Web.WebPages.resources.dll
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\ru\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\ru\System.Web.Optimization.resources.dll
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\ru\EntityFramework.resources.dll
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\ru\EntityFramework.SqlServer.resources.dll
 C:\Users\Darina\Documents\Workspace\AutoServiceGit\autoservice\Auto_Service\Auto_Service\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auto_Service", "..\Auto_Service\Auto_Service\Auto_Service.csproj", "{948D583D-FFFE-4D21-AD23-EEE13A83A511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoServiceTests", "AutoServiceTests\AutoServiceTests.csproj", "{716C580F-A5D5-4740-9D6A-993CCE16048F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{948D583D-FFFE-4D21-AD23-EEE13A83A511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948D583D-FFFE-4D21-AD23-EEE13A83A511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948D583D-FFFE-4D21-AD23-EEE13A83A511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948D583D-FFFE-4D21-AD23-EEE13A83A511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716C580F-A5D5-4740-9D6A-993CCE16048F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716C580F-A5D5-4740-9D6A-993CCE16048F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716C580F-A5D5-4740-9D6A-993CCE16048F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716C580F-A5D5-4740-9D6A-993CCE16048F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C042599-82A7-428F-9921-8CC6C3438D4C}
+	EndGlobalSection
+EndGlobal
