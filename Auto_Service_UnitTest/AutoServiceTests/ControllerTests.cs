@@ -6,6 +6,7 @@ using System.Text;
 using System.Web.Mvc;
 using Auto_Service;
 using Auto_Service.Controllers;
+using Auto_Service.Models;
 
 namespace AutoServiceTests
 {
@@ -33,6 +34,30 @@ namespace AutoServiceTests
         {
             HomeController controller = new HomeController();
             ViewResult result = controller.Contact() as ViewResult;
+            Assert.IsNotNull(result);
+        }
+
+        [TestMethod]
+        public void IndexOrder()
+        {
+            OrderController controller = new OrderController();
+            ViewResult result = controller.Index() as ViewResult;
+            Assert.IsNotNull(result);
+        }
+
+        [TestMethod]
+        public void ManageOrder()
+        {
+            OrderController controller = new OrderController();
+            ViewResult result = controller.Manage() as ViewResult;
+            Assert.IsNotNull(result);
+        }
+
+        [TestMethod]
+        public void CreateOrder()
+        {
+            OrderController controller = new OrderController();
+            ViewResult result = controller.Create() as ViewResult;
             Assert.IsNotNull(result);
         }
     }
