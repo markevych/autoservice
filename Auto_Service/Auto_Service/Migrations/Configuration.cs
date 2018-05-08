@@ -5,15 +5,15 @@ namespace Auto_Service.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Auto_Service.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Auto_Service.Models.OrdersContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "Auto_Service.Models.ApplicationDbContext";
+            ContextKey = "Auto_Service.Models.OrdersContext";
         }
 
-        protected override void Seed(Auto_Service.Models.ApplicationDbContext context)
+        protected override void Seed(Auto_Service.Models.OrdersContext context)
         {
             //  This method will be called after migrating to the latest version.
 

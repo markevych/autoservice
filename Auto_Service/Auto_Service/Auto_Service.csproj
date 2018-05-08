@@ -184,6 +184,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
@@ -192,17 +193,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805060851585_InitialCreate.cs" />
-    <Compile Include="Migrations\201805060851585_InitialCreate.Designer.cs">
-      <DependentUpon>201805060851585_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201805061432002_InitialCreate.cs" />
+    <Compile Include="Migrations\201805061432002_InitialCreate.Designer.cs">
+      <DependentUpon>201805061432002_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805060910358_addfullname.cs" />
-    <Compile Include="Migrations\201805060910358_addfullname.Designer.cs">
-      <DependentUpon>201805060910358_addfullname.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805061011568_role.cs" />
-    <Compile Include="Migrations\201805061011568_role.Designer.cs">
-      <DependentUpon>201805061011568_role.cs</DependentUpon>
+    <Compile Include="Migrations\201805081354555_CarName.cs" />
+    <Compile Include="Migrations\201805081354555_CarName.Designer.cs">
+      <DependentUpon>201805081354555_CarName.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -291,6 +288,7 @@
     <Content Include="Views\Shared\Client.cshtml" />
     <Content Include="Views\Order\Manage.cshtml" />
     <Content Include="Views\Service\Manage.cshtml" />
+    <Content Include="Views\Admin\GetOwnersOfCar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -309,14 +307,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805060851585_InitialCreate.resx">
-      <DependentUpon>201805060851585_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805061432002_InitialCreate.resx">
+      <DependentUpon>201805061432002_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805060910358_addfullname.resx">
-      <DependentUpon>201805060910358_addfullname.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805061011568_role.resx">
-      <DependentUpon>201805061011568_role.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805081354555_CarName.resx">
+      <DependentUpon>201805081354555_CarName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

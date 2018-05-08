@@ -20,24 +20,50 @@
         <th>
             @Html.DisplayNameFor(model => model.Owner)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarName)
+        </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PostTime)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Owner)
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CarName)
+            </td>
+        </tr>
+    }
 
 </table>
+
+
+
+@if (User.IsInRole("admin"))
+{
+    <div class="row">
+        <div class="well col-sm-4">
+            <div class="container">
+                <p>Show all owners of car : </p>
+                @using (Html.BeginForm("GetOwnersOfCar", "Admin"))
+                {
+                    <input type="text" name="carName" id="carName" class="form-control" />
+                    <br />
+                    <input type="submit" class="btn btn-success" value="Find" />
+                }
+            </div>
+        </div>
+    </div>
+}
