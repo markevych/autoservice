@@ -10,14 +10,49 @@ namespace Auto_Service.Controllers
 {
     public class OrderController : Controller
     {
-        // GET: Order
-        public ActionResult Index()
+        public ActionResult Index(string faddress)
         {
             List<Order> list = new List<Order>();
+            List<string> addresses = new List<string>();
+            if(faddress=="" || faddress ==null)
+            {
+                addresses.Add("All");
+            }
+            else
+            {
+                addresses.Add(faddress);
+            }
+
+            addresses.Add("All");
+
             using (OrdersContext sc = new OrdersContext())
             {
                 list = sc.Orders.ToList();
+                
+                
             }
+            foreach (var i in list)
+            {
+                addresses.Add(i.Address);
+            }
+
+            addresses.Add("None");
+
+            addresses = addresses.Distinct().ToList();
+
+            if (addresses.First()!="All")
+            {
+                if(addresses.First() == "None")
+                {
+                    list = list.Where(f => f.Address == null  || f.Address == "").ToList();
+                }
+                else
+                {
+                    list = list.Where(f => f.Address == addresses.First()).ToList();
+                }
+            }
+
+            ViewBag.Addresses = addresses;
             return View(list);
         }
 

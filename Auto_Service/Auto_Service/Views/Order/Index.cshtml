@@ -5,65 +5,87 @@
 }
 
 <h2>All orders</h2>
-
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PostTime)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Owner)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CarName)
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PostTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Owner)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CarName)
-            </td>
-        </tr>
-    }
-
-</table>
-
-
-
 @if (User.IsInRole("admin"))
 {
-    <div class="row">
-        <div class="well col-sm-4">
-            <div class="container">
-                <p>Show all owners of car : </p>
-                @using (Html.BeginForm("GetOwnersOfCar", "Admin"))
-                {
-                    <input type="text" name="carName" id="carName" class="form-control" />
-                    <br />
-                    <input type="submit" class="btn btn-success" value="Find" />
-                }
-            </div>
-        </div>
+    <p>Filter by address : </p>
+    <div class="dropdown" style=" margin-bottom: 20px;">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            @ViewBag.Addresses[0]
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            @foreach (var i in ViewBag.Addresses)
+            {
+                <li><a href="./Order?faddress=@i">@i</a></li>
+            }
+        </ul>
     </div>
 }
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CarName)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PostTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Owner)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CarName)
+                </td>
+            </tr>
+        }
+
+    </table>
+
+
+
+    @if (User.IsInRole("admin"))
+    {
+        <div class="row">
+            <div class="well col-sm-4">
+                <div class="container">
+                    <p>Show all owners of car : </p>
+                    @using (Html.BeginForm("GetOwnersOfCar", "Admin"))
+                    {
+                        <input type="text" name="carName" id="carName" class="form-control" />
+                        <br />
+                        <input type="submit" class="btn btn-success" value="Find" />
+                    }
+                </div>
+            </div>
+        </div>
+
+    }

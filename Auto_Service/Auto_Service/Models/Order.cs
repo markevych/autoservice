@@ -13,5 +13,6 @@ namespace Auto_Service.Models
         public string PostTime { get; set; }
         public string Owner { get; set; }
         public string CarName { get; set; }
+        public string Address { get; set; }
     }
 }
